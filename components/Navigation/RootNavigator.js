@@ -5,6 +5,7 @@ import { Cart } from "../Cart";
 import { createStackNavigator } from "@react-navigation/stack";
 const { Navigator, Screen } = createStackNavigator();
 export default function RootNavigator() {
+  //to navigate
   return (
     <Navigator initialRouteName="Home">
       <Screen name="Home" component={ProductsList} />
