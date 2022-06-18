@@ -1,12 +1,10 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import cartStore from '../stores/cartStore';
+import React from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import cartStore from "../stores/cartStore";
 
 export function CartIcon() {
   return (
-    <TouchableOpacity
-      onPress={() => {}}
-    >
+    <TouchableOpacity onPress={() => {}}>
       <View style={styles.container}>
         <Text style={styles.text} onPress={() => {}}>
           Cart ({cartStore.getTotalPrice()})
@@ -19,15 +17,15 @@ export function CartIcon() {
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 8,
-    backgroundColor: 'orange',
+    backgroundColor: "orange",
     height: 52,
     padding: 12,
     borderRadius: 32 / 2,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
-    color: 'white',
-    fontWeight: 'bold',
+    color: "white",
+    fontWeight: "bold",
   },
 });
